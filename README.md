@@ -11,5 +11,9 @@ docker run -it --rm --name ansible-container -h ansible-container \
 
 ```
 
+Note: To grant access to the host docker engine from a container you need execute this command as root:
+
+`# setfacl -m u:$USER:rwx /var/run/docker.sock`
+
 - GitHub Page: https://github.com/dmitrii-ageev/ansible-container
 - Docker Hub Page: https://hub.docker.com/r/dmitriiageev/ansible-container
