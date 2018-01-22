@@ -25,7 +25,7 @@ RUN gpasswd -a developer docker
 
 # Install Ansible-Container
 RUN pip install --upgrade pip
-RUN pip install ansible-container
+RUN pip install ansible-container==0.9.2[docker]
 
 # Run a software piece as non-root user
 USER $UNAME
