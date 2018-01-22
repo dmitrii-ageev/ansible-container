@@ -4,4 +4,5 @@ docker run -it --rm --name $APP -h $APP \
        --cpuset-cpus 0 --memory 2048mb --net host \
        -v ~/Downloads:/home/developer/Downlods \
        -v ~/Documents/Ansible:/home/developer/ansible \
+       -v /var/run/docker.sock:/var/run/docker.sock \
        dmitriiageev/$APP
