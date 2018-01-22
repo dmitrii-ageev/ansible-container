@@ -1,5 +1,5 @@
 # Ansible
-Dockerized application to run Ansible-Container - Ansible-centric workflow for building, running, testing, and deploying containers.
+Dockerized application of Ansible-Container - tool for building, running, and deploying containers.
 
 # Usage
 ```
