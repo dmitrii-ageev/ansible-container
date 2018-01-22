@@ -21,6 +21,7 @@ RUN add-apt-repository \
 # Install Docker CE
 RUN apt update
 RUN apt install -y docker-ce
+RUN gpasswd -a developer docker
 
 # Install Ansible-Container
 RUN pip install --upgrade pip
