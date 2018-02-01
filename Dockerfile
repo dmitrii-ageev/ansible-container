@@ -3,6 +3,7 @@ MAINTAINER Dmitrii Ageev <d.ageev@gmail.com>
 
 # Install auxiliary software packages
 USER root
+RUN apt update
 RUN apt install -y \
     apt-transport-https \
     ca-certificates \
@@ -31,4 +32,3 @@ RUN pip install ansible-container[docker,k8s]
 USER $UNAME
 WORKDIR $HOME/ansible
 CMD /bin/bash
-
