@@ -31,3 +31,4 @@ RUN pip install ansible-container[docker,k8s]
 USER $UNAME
 WORKDIR $HOME/ansible
 CMD /bin/bash
+
